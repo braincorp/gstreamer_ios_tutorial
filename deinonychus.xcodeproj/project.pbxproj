@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0951E90318D2857400F6FE78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0951E90218D2857400F6FE78 /* Foundation.framework */; };
+		0951E90518D2857400F6FE78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0951E90418D2857400F6FE78 /* CoreGraphics.framework */; };
+		0951E90718D2857400F6FE78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0951E90618D2857400F6FE78 /* UIKit.framework */; };
+		0951E90918D2857400F6FE78 /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0951E90818D2857400F6FE78 /* GStreamer.framework */; };
+		0951E90F18D2857400F6FE78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0951E90D18D2857400F6FE78 /* InfoPlist.strings */; };
+		0951E91118D2857400F6FE78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0951E91018D2857400F6FE78 /* main.m */; };
+		0951E91518D2857400F6FE78 /* DEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0951E91418D2857400F6FE78 /* DEAppDelegate.m */; };
+		0951E91818D2857400F6FE78 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0951E91618D2857400F6FE78 /* Main_iPhone.storyboard */; };
+		0951E91B18D2857400F6FE78 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0951E91918D2857400F6FE78 /* Main_iPad.storyboard */; };
+		0951E91E18D2857400F6FE78 /* DEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0951E91D18D2857400F6FE78 /* DEViewController.m */; };
+		0951E92018D2857400F6FE78 /* fonts.conf in Resources */ = {isa = PBXBuildFile; fileRef = 0951E91F18D2857400F6FE78 /* fonts.conf */; };
+		0951E92218D2857400F6FE78 /* Ubuntu-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0951E92118D2857400F6FE78 /* Ubuntu-R.ttf */; };
+		0951E92418D2857400F6FE78 /* gst_ios_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 0951E92318D2857400F6FE78 /* gst_ios_init.m */; };
+		0951E92718D2857400F6FE78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0951E92618D2857400F6FE78 /* Images.xcassets */; };
+		0951E92E18D2857400F6FE78 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0951E92D18D2857400F6FE78 /* XCTest.framework */; };
+		0951E92F18D2857400F6FE78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0951E90218D2857400F6FE78 /* Foundation.framework */; };
+		0951E93018D2857400F6FE78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0951E90618D2857400F6FE78 /* UIKit.framework */; };
+		0951E93818D2857400F6FE78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0951E93618D2857400F6FE78 /* InfoPlist.strings */; };
+		0951E93A18D2857400F6FE78 /* deinonychusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0951E93918D2857400F6FE78 /* deinonychusTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0951E93118D2857400F6FE78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0951E8F718D2857400F6FE78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0951E8FE18D2857400F6FE78;
+			remoteInfo = deinonychus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0951E8FF18D2857400F6FE78 /* deinonychus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deinonychus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0951E90218D2857400F6FE78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0951E90418D2857400F6FE78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0951E90618D2857400F6FE78 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0951E90818D2857400F6FE78 /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = Library/Frameworks/GStreamer.framework; sourceTree = DEVELOPER_DIR; };
+		0951E90C18D2857400F6FE78 /* deinonychus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "deinonychus-Info.plist"; sourceTree = "<group>"; };
+		0951E90E18D2857400F6FE78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0951E91018D2857400F6FE78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0951E91218D2857400F6FE78 /* deinonychus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "deinonychus-Prefix.pch"; sourceTree = "<group>"; };
+		0951E91318D2857400F6FE78 /* DEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEAppDelegate.h; sourceTree = "<group>"; };
+		0951E91418D2857400F6FE78 /* DEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEAppDelegate.m; sourceTree = "<group>"; };
+		0951E91718D2857400F6FE78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		0951E91A18D2857400F6FE78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		0951E91C18D2857400F6FE78 /* DEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEViewController.h; sourceTree = "<group>"; };
+		0951E91D18D2857400F6FE78 /* DEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEViewController.m; sourceTree = "<group>"; };
+		0951E91F18D2857400F6FE78 /* fonts.conf */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = fonts.conf; sourceTree = "<group>"; };
+		0951E92118D2857400F6FE78 /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-R.ttf"; sourceTree = "<group>"; };
+		0951E92318D2857400F6FE78 /* gst_ios_init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gst_ios_init.m; sourceTree = "<group>"; };
+		0951E92518D2857400F6FE78 /* gst_ios_init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gst_ios_init.h; sourceTree = "<group>"; };
+		0951E92618D2857400F6FE78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0951E92C18D2857400F6FE78 /* deinonychusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deinonychusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0951E92D18D2857400F6FE78 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0951E93518D2857400F6FE78 /* deinonychusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "deinonychusTests-Info.plist"; sourceTree = "<group>"; };
+		0951E93718D2857400F6FE78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0951E93918D2857400F6FE78 /* deinonychusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = deinonychusTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0951E8FC18D2857400F6FE78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0951E90518D2857400F6FE78 /* CoreGraphics.framework in Frameworks */,
+				0951E90918D2857400F6FE78 /* GStreamer.framework in Frameworks */,
+				0951E90718D2857400F6FE78 /* UIKit.framework in Frameworks */,
+				0951E90318D2857400F6FE78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0951E92918D2857400F6FE78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0951E92E18D2857400F6FE78 /* XCTest.framework in Frameworks */,
+				0951E93018D2857400F6FE78 /* UIKit.framework in Frameworks */,
+				0951E92F18D2857400F6FE78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0951E8F618D2857400F6FE78 = {
+			isa = PBXGroup;
+			children = (
+				0951E90A18D2857400F6FE78 /* deinonychus */,
+				0951E93318D2857400F6FE78 /* deinonychusTests */,
+				0951E90118D2857400F6FE78 /* Frameworks */,
+				0951E90018D2857400F6FE78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0951E90018D2857400F6FE78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0951E8FF18D2857400F6FE78 /* deinonychus.app */,
+				0951E92C18D2857400F6FE78 /* deinonychusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0951E90118D2857400F6FE78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0951E90218D2857400F6FE78 /* Foundation.framework */,
+				0951E90418D2857400F6FE78 /* CoreGraphics.framework */,
+				0951E90618D2857400F6FE78 /* UIKit.framework */,
+				0951E90818D2857400F6FE78 /* GStreamer.framework */,
+				0951E92D18D2857400F6FE78 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0951E90A18D2857400F6FE78 /* deinonychus */ = {
+			isa = PBXGroup;
+			children = (
+				0951E91318D2857400F6FE78 /* DEAppDelegate.h */,
+				0951E91418D2857400F6FE78 /* DEAppDelegate.m */,
+				0951E91618D2857400F6FE78 /* Main_iPhone.storyboard */,
+				0951E91918D2857400F6FE78 /* Main_iPad.storyboard */,
+				0951E91C18D2857400F6FE78 /* DEViewController.h */,
+				0951E91D18D2857400F6FE78 /* DEViewController.m */,
+				0951E92618D2857400F6FE78 /* Images.xcassets */,
+				0951E90B18D2857400F6FE78 /* Supporting Files */,
+			);
+			path = deinonychus;
+			sourceTree = "<group>";
+		};
+		0951E90B18D2857400F6FE78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0951E90C18D2857400F6FE78 /* deinonychus-Info.plist */,
+				0951E90D18D2857400F6FE78 /* InfoPlist.strings */,
+				0951E91018D2857400F6FE78 /* main.m */,
+				0951E91218D2857400F6FE78 /* deinonychus-Prefix.pch */,
+				0951E91F18D2857400F6FE78 /* fonts.conf */,
+				0951E92118D2857400F6FE78 /* Ubuntu-R.ttf */,
+				0951E92318D2857400F6FE78 /* gst_ios_init.m */,
+				0951E92518D2857400F6FE78 /* gst_ios_init.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0951E93318D2857400F6FE78 /* deinonychusTests */ = {
+			isa = PBXGroup;
+			children = (
+				0951E93918D2857400F6FE78 /* deinonychusTests.m */,
+				0951E93418D2857400F6FE78 /* Supporting Files */,
+			);
+			path = deinonychusTests;
+			sourceTree = "<group>";
+		};
+		0951E93418D2857400F6FE78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0951E93518D2857400F6FE78 /* deinonychusTests-Info.plist */,
+				0951E93618D2857400F6FE78 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0951E8FE18D2857400F6FE78 /* deinonychus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0951E93D18D2857400F6FE78 /* Build configuration list for PBXNativeTarget "deinonychus" */;
+			buildPhases = (
+				0951E8FB18D2857400F6FE78 /* Sources */,
+				0951E8FC18D2857400F6FE78 /* Frameworks */,
+				0951E8FD18D2857400F6FE78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = deinonychus;
+			productName = deinonychus;
+			productReference = 0951E8FF18D2857400F6FE78 /* deinonychus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0951E92B18D2857400F6FE78 /* deinonychusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0951E94018D2857400F6FE78 /* Build configuration list for PBXNativeTarget "deinonychusTests" */;
+			buildPhases = (
+				0951E92818D2857400F6FE78 /* Sources */,
+				0951E92918D2857400F6FE78 /* Frameworks */,
+				0951E92A18D2857400F6FE78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0951E93218D2857400F6FE78 /* PBXTargetDependency */,
+			);
+			name = deinonychusTests;
+			productName = deinonychusTests;
+			productReference = 0951E92C18D2857400F6FE78 /* deinonychusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0951E8F718D2857400F6FE78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DE;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jonathan Hunt";
+				TargetAttributes = {
+					0951E92B18D2857400F6FE78 = {
+						TestTargetID = 0951E8FE18D2857400F6FE78;
+					};
+				};
+			};
+			buildConfigurationList = 0951E8FA18D2857400F6FE78 /* Build configuration list for PBXProject "deinonychus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0951E8F618D2857400F6FE78;
+			productRefGroup = 0951E90018D2857400F6FE78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0951E8FE18D2857400F6FE78 /* deinonychus */,
+				0951E92B18D2857400F6FE78 /* deinonychusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0951E8FD18D2857400F6FE78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0951E92018D2857400F6FE78 /* fonts.conf in Resources */,
+				0951E92218D2857400F6FE78 /* Ubuntu-R.ttf in Resources */,
+				0951E91B18D2857400F6FE78 /* Main_iPad.storyboard in Resources */,
+				0951E92718D2857400F6FE78 /* Images.xcassets in Resources */,
+				0951E91818D2857400F6FE78 /* Main_iPhone.storyboard in Resources */,
+				0951E90F18D2857400F6FE78 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0951E92A18D2857400F6FE78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0951E93818D2857400F6FE78 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0951E8FB18D2857400F6FE78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0951E92418D2857400F6FE78 /* gst_ios_init.m in Sources */,
+				0951E91118D2857400F6FE78 /* main.m in Sources */,
+				0951E91E18D2857400F6FE78 /* DEViewController.m in Sources */,
+				0951E91518D2857400F6FE78 /* DEAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0951E92818D2857400F6FE78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0951E93A18D2857400F6FE78 /* deinonychusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0951E93218D2857400F6FE78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0951E8FE18D2857400F6FE78 /* deinonychus */;
+			targetProxy = 0951E93118D2857400F6FE78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0951E90D18D2857400F6FE78 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0951E90E18D2857400F6FE78 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0951E91618D2857400F6FE78 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0951E91718D2857400F6FE78 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0951E91918D2857400F6FE78 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0951E91A18D2857400F6FE78 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0951E93618D2857400F6FE78 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0951E93718D2857400F6FE78 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0951E93B18D2857400F6FE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0951E93C18D2857400F6FE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0951E93E18D2857400F6FE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Library/Developer/GStreamer/iPhone.sdk",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "deinonychus/deinonychus-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"~/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers\"";
+				INFOPLIST_FILE = "deinonychus/deinonychus-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lresolv",
+					"-lstdc++",
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					AssetsLibrary,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0951E93F18D2857400F6FE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Library/Developer/GStreamer/iPhone.sdk",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "deinonychus/deinonychus-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"~/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers\"";
+				INFOPLIST_FILE = "deinonychus/deinonychus-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lresolv",
+					"-lstdc++",
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					AssetsLibrary,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0951E94118D2857400F6FE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/deinonychus.app/deinonychus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "deinonychus/deinonychus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "deinonychusTests/deinonychusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0951E94218D2857400F6FE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/deinonychus.app/deinonychus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "deinonychus/deinonychus-Prefix.pch";
+				INFOPLIST_FILE = "deinonychusTests/deinonychusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0951E8FA18D2857400F6FE78 /* Build configuration list for PBXProject "deinonychus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0951E93B18D2857400F6FE78 /* Debug */,
+				0951E93C18D2857400F6FE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0951E93D18D2857400F6FE78 /* Build configuration list for PBXNativeTarget "deinonychus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0951E93E18D2857400F6FE78 /* Debug */,
+				0951E93F18D2857400F6FE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0951E94018D2857400F6FE78 /* Build configuration list for PBXNativeTarget "deinonychusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0951E94118D2857400F6FE78 /* Debug */,
+				0951E94218D2857400F6FE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0951E8F718D2857400F6FE78 /* Project object */;
+}
