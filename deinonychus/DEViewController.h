@@ -10,4 +10,9 @@
 
 @interface DEViewController : UIViewController
 
+/* From GStreamerBackendDelegate */
+-(void) gstreamerInitialized;
+-(void) gstreamerSetUIMessage:(NSString *)message;
+
+
 @end

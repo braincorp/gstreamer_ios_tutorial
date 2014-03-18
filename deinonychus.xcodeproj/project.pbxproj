@@ -26,6 +26,9 @@
 		0951E93018D2857400F6FE78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0951E90618D2857400F6FE78 /* UIKit.framework */; };
 		0951E93818D2857400F6FE78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0951E93618D2857400F6FE78 /* InfoPlist.strings */; };
 		0951E93A18D2857400F6FE78 /* deinonychusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0951E93918D2857400F6FE78 /* deinonychusTests.m */; };
+		0951E94518D287AE00F6FE78 /* GStreamerBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0951E94418D287AE00F6FE78 /* GStreamerBackend.m */; };
+		09D29F4818D8E66100C27BED /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D29F4718D8E66100C27BED /* GLKit.framework */; };
+		09D29F4A18D8E78400C27BED /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D29F4918D8E78400C27BED /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,10 @@
 		0951E93518D2857400F6FE78 /* deinonychusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "deinonychusTests-Info.plist"; sourceTree = "<group>"; };
 		0951E93718D2857400F6FE78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0951E93918D2857400F6FE78 /* deinonychusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = deinonychusTests.m; sourceTree = "<group>"; };
+		0951E94318D287AE00F6FE78 /* GStreamerBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GStreamerBackend.h; sourceTree = "<group>"; };
+		0951E94418D287AE00F6FE78 /* GStreamerBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GStreamerBackend.m; sourceTree = "<group>"; };
+		09D29F4718D8E66100C27BED /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		09D29F4918D8E78400C27BED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D29F4818D8E66100C27BED /* GLKit.framework in Frameworks */,
 				0951E90518D2857400F6FE78 /* CoreGraphics.framework in Frameworks */,
+				09D29F4A18D8E78400C27BED /* CoreData.framework in Frameworks */,
 				0951E90918D2857400F6FE78 /* GStreamer.framework in Frameworks */,
 				0951E90718D2857400F6FE78 /* UIKit.framework in Frameworks */,
 				0951E90318D2857400F6FE78 /* Foundation.framework in Frameworks */,
@@ -113,6 +122,8 @@
 		0951E90118D2857400F6FE78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09D29F4918D8E78400C27BED /* CoreData.framework */,
+				09D29F4718D8E66100C27BED /* GLKit.framework */,
 				0951E90218D2857400F6FE78 /* Foundation.framework */,
 				0951E90418D2857400F6FE78 /* CoreGraphics.framework */,
 				0951E90618D2857400F6FE78 /* UIKit.framework */,
@@ -133,6 +144,8 @@
 				0951E91D18D2857400F6FE78 /* DEViewController.m */,
 				0951E92618D2857400F6FE78 /* Images.xcassets */,
 				0951E90B18D2857400F6FE78 /* Supporting Files */,
+				0951E94318D287AE00F6FE78 /* GStreamerBackend.h */,
+				0951E94418D287AE00F6FE78 /* GStreamerBackend.m */,
 			);
 			path = deinonychus;
 			sourceTree = "<group>";
@@ -273,6 +286,7 @@
 			files = (
 				0951E92418D2857400F6FE78 /* gst_ios_init.m in Sources */,
 				0951E91118D2857400F6FE78 /* main.m in Sources */,
+				0951E94518D287AE00F6FE78 /* GStreamerBackend.m in Sources */,
 				0951E91E18D2857400F6FE78 /* DEViewController.m in Sources */,
 				0951E91518D2857400F6FE78 /* DEAppDelegate.m in Sources */,
 			);
@@ -553,6 +567,7 @@
 				0951E93F18D2857400F6FE78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0951E94018D2857400F6FE78 /* Build configuration list for PBXNativeTarget "deinonychusTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +576,7 @@
 				0951E94218D2857400F6FE78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
