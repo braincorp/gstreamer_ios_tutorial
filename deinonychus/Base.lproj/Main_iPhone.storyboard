@@ -43,17 +43,10 @@
                                     <action selector="pause:" destination="vXZ-lx-hvc" eventType="touchDown" id="xx4-ku-OfN"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YDx-ch-jHj">
-                                <rect key="frame" x="111" y="183" width="160" height="284"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <glkView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" enableSetNeedsDisplay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTz-7P-dGW">
-                                        <rect key="frame" x="-20" y="-83" width="160" height="284"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    </glkView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
+                            <glkView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" enableSetNeedsDisplay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTz-7P-dGW">
+                                <rect key="frame" x="110" y="192" width="160" height="284"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </glkView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -62,7 +55,6 @@
                         <outlet property="label" destination="U33-oW-VdG" id="rZh-oJ-lqY"/>
                         <outlet property="pause" destination="IP0-ND-zPL" id="kyN-VZ-25I"/>
                         <outlet property="play" destination="8Z3-mC-A6s" id="shC-SL-FfS"/>
-                        <outlet property="video_view" destination="YDx-ch-jHj" id="Cz2-0c-SO3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

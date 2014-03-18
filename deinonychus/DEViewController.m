@@ -17,9 +17,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *play;
 @property (weak, nonatomic) IBOutlet UIButton *pause;
 @property (weak, nonatomic) IBOutlet UILabel *label;
-@property (weak, nonatomic) IBOutlet UIView *video_view;
 @property (weak, nonatomic) IBOutlet GLKView *glk_view;
 @end
+
 
 @implementation DEViewController
 GStreamerBackend *gst_backend;
