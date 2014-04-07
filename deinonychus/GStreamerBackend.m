@@ -51,8 +51,8 @@ GST_DEBUG_CATEGORY_STATIC (debug_category);
         self->ui_video_view = video_view;
         
         GST_DEBUG_CATEGORY_INIT (debug_category, "tutorial-3", 0, "iOS tutorial 3");
-        gst_debug_set_threshold_for_name("tutorial-3", GST_LEVEL_DEBUG);
-        gst_debug_set_default_threshold(GST_LEVEL_DEBUG);
+        gst_debug_set_threshold_for_name("tutorial-3", GST_LEVEL_WARNING);
+        gst_debug_set_default_threshold(GST_LEVEL_WARNING);
         
         /* Start the bus monitoring task */
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -158,7 +158,7 @@ static void state_changed_cb (GstBus *bus, GstMessage *msg, GStreamerBackend *se
     g_main_context_push_thread_default(context);
     
     /* Build pipeline */
-    pipeline = gst_parse_launch("videotestsrc ! warptv ! videoconvert ! eglglessink", &error);
+    pipeline = gst_parse_launch("videotestsrc ! eglglessink", &error);
     if (error) {
         gchar *message = g_strdup_printf("Unable to build pipeline: %s", error->message);
         g_clear_error (&error);
