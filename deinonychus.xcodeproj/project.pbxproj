@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093A884B18F373D7007CF8EA /* EaglUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A884A18F373D7007CF8EA /* EaglUIView.m */; };
 		0951E90318D2857400F6FE78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0951E90218D2857400F6FE78 /* Foundation.framework */; };
 		0951E90518D2857400F6FE78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0951E90418D2857400F6FE78 /* CoreGraphics.framework */; };
 		0951E90718D2857400F6FE78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0951E90618D2857400F6FE78 /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		093A884918F373D7007CF8EA /* EaglUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaglUIView.h; sourceTree = "<group>"; };
+		093A884A18F373D7007CF8EA /* EaglUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaglUIView.m; sourceTree = "<group>"; };
 		0951E8FF18D2857400F6FE78 /* deinonychus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deinonychus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0951E90218D2857400F6FE78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0951E90418D2857400F6FE78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,6 +142,8 @@
 				0951E91318D2857400F6FE78 /* DEAppDelegate.h */,
 				0951E91418D2857400F6FE78 /* DEAppDelegate.m */,
 				0951E91618D2857400F6FE78 /* Main_iPhone.storyboard */,
+				093A884918F373D7007CF8EA /* EaglUIView.h */,
+				093A884A18F373D7007CF8EA /* EaglUIView.m */,
 				0951E91918D2857400F6FE78 /* Main_iPad.storyboard */,
 				0951E91C18D2857400F6FE78 /* DEViewController.h */,
 				0951E91D18D2857400F6FE78 /* DEViewController.m */,
@@ -287,6 +292,7 @@
 				0951E92418D2857400F6FE78 /* gst_ios_init.m in Sources */,
 				0951E91118D2857400F6FE78 /* main.m in Sources */,
 				0951E94518D287AE00F6FE78 /* GStreamerBackend.m in Sources */,
+				093A884B18F373D7007CF8EA /* EaglUIView.m in Sources */,
 				0951E91E18D2857400F6FE78 /* DEViewController.m in Sources */,
 				0951E91518D2857400F6FE78 /* DEAppDelegate.m in Sources */,
 			);

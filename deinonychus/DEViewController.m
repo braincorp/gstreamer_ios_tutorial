@@ -11,13 +11,14 @@
 
 #import "DEViewController.h"
 #import "GStreamerBackend.h"
+#import "EaglUIView.h"
 
 
 @interface DEViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *play;
 @property (weak, nonatomic) IBOutlet UIButton *pause;
 @property (weak, nonatomic) IBOutlet UILabel *label;
-@property (weak, nonatomic) IBOutlet GLKView *glk_view;
+@property (weak, nonatomic) IBOutlet EaglUIView *videoView;
 @end
 
 
@@ -39,7 +40,7 @@ GStreamerBackend *gst_backend;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    gst_backend = [[GStreamerBackend alloc] init:self videoView:self.glk_view];
+    gst_backend = [[GStreamerBackend alloc] init:self videoView:self.videoView];
 
     NSLog([gst_backend getGStreamerVersion]);
     self.label.text = [NSString stringWithFormat:@"Welcome to%@!", [gst_backend getGStreamerVersion]];
